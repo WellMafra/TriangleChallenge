@@ -52,5 +52,10 @@ public class TriangleTest {
     public void testZeroLength() {
         new Triangle(Length.of(0d), Length.of(0.0d), Length.of(0.0000d));
     }
+    
+    @Test(expected=InvalidLengthException.class)
+    public void testNullLength() {
+        new Triangle(null, Length.of(0.0d), Length.of(0.0000d));
+    }
 
 }
