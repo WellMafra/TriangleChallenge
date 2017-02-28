@@ -1,4 +1,4 @@
-package com.wellingtonmafra.domain.model;
+package com.wellingtonmafra.domain.type;
 
 public enum TriangleType {  
     EQUILATERAL,
