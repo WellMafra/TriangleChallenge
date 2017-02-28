@@ -1,7 +1,6 @@
 package com.wellingtonmafra.app;
 import java.util.Scanner;
 
-import com.wellingtonmafra.domain.model.Length;
 import com.wellingtonmafra.domain.model.Triangle;
 
 public class App {
@@ -12,7 +11,7 @@ public class App {
         System.out.print("\nTriangle sides: ");
         System.out.println(sides[0] + " " + sides[1] + " " + sides[2]);
 
-        Triangle triangle = new Triangle(Length.of(sides[0]), Length.of(sides[1]), Length.of(sides[2]));
+        Triangle triangle = Triangle.of(sides[0], sides[1], sides[2]);
         System.out.println("It is an " + triangle.getType() + " triangle.");
     }
     
